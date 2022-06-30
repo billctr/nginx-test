@@ -1,2 +1,0 @@
-(()=>{var e={624:(e,o,r)=>{"use strict";e.exports=r.p+"931f25971e9d525444a4.jpg"}},o={};function r(t){var n=o[t];if(void 0!==n)return n.exports;var p=o[t]={exports:{}};return e[t](p,p.exports,r),p.exports}r.p="/",(()=>{console.log("Hello funny world");const e=r(624),o=document.createElement("img");o.src=e,document.body.append(o)})()})();
-//# sourceMappingURL=main.8ead97f193799df788ed.js.map
