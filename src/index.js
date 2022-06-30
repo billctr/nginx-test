@@ -1,1 +1,1 @@
-console.log("Hello normal world");
+console.log("Hello regular world");
