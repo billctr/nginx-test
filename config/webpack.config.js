@@ -1,4 +1,5 @@
 const path = require("path");
+const CompressionPlugin = require("compression-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
@@ -18,6 +19,12 @@ module.exports = {
     },
   },
   plugins: [
+    new CompressionPlugin({
+      filename: "[name][ext].gz",
+      algorithm: "gzip",
+      test: /\.(js)$/,
+      minRatio: Infinity,
+    }),
     new HtmlWebpackPlugin({
       title: "Nginx test",
       inject: "body",
