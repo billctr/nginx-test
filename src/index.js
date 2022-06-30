@@ -1,1 +1,1 @@
-console.log("Hello random world");
+console.log("Hello path world");
