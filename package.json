@@ -7,7 +7,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "webpack --config config/webpack.config.js"
+    "build": "rm -rf ./dist & webpack --config config/webpack.config.js"
   },
   "author": "",
   "license": "ISC",
