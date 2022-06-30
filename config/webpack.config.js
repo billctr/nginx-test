@@ -19,12 +19,12 @@ module.exports = {
     },
   },
   plugins: [
-    new CompressionPlugin({
-      filename: "[name][ext].gz",
-      algorithm: "gzip",
-      test: /\.(js)$/,
-      minRatio: Infinity,
-    }),
+    // new CompressionPlugin({
+    //   filename: "[name][ext].gz",
+    //   algorithm: "gzip",
+    //   test: /\.(js)$/,
+    //   minRatio: Infinity,
+    // }),
     new HtmlWebpackPlugin({
       title: "Nginx test",
       inject: "body",
