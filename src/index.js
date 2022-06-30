@@ -1,1 +1,1 @@
-console.log("Hello path world");
+console.log("Hello new world");
