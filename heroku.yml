@@ -1,5 +1,5 @@
 build:
   docker:
-    web: config/docker/Dockerfile
+    web: Dockerfile
   config:
     SOURCE_MAP_SECRET: abcd
