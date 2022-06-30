@@ -9,6 +9,7 @@ module.exports = {
     path: path.resolve(process.cwd(), "dist"),
     filename: "[name].[contenthash].js",
     chunkFilename: "[name].[contenthash].chunk.js",
+    publicPath: "/",
   },
   devtool: "nosources-source-map",
   target: "web",
@@ -19,12 +20,12 @@ module.exports = {
     },
   },
   plugins: [
-    // new CompressionPlugin({
-    //   filename: "[name][ext].gz",
-    //   algorithm: "gzip",
-    //   test: /\.(js)$/,
-    //   minRatio: Infinity,
-    // }),
+    new CompressionPlugin({
+      filename: "[name][ext].gz",
+      algorithm: "gzip",
+      test: /\.(js)$/,
+      minRatio: Infinity,
+    }),
     new HtmlWebpackPlugin({
       title: "Nginx test",
       inject: "body",
