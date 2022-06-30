@@ -2,7 +2,7 @@ FROM node:14 as build
 
 WORKDIR /application
 
-RUN ["npm", "install", "git+https://github.com/billctr/nginx-test.git"]
+RUN ["yarn", "add", "git+https://github.com/billctr/nginx-test.git"]
 
 FROM nginx:1.19.2-alpine
 
